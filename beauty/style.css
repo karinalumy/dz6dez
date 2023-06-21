@@ -33,6 +33,10 @@ header img {
     max-height: 5rem;
 }
 
+[onclick] {
+    cursor: pointer;
+}
+
 .container-menu {
     display: flex;
     align-items: center;
@@ -70,22 +74,22 @@ header img {
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding-bottom: 3rem;
+    
     padding-left: 2rem;
     /* text-align: center; */
 }
 
 h1 {
-
     font-size: 3rem;
     color: rgb(255, 255, 255);
+    
 }
 
 #banner p {
     margin-top: 1rem;
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
+    
 }
 
 #banner button {
@@ -96,6 +100,8 @@ h1 {
     border: none;
     font-weight: 700;
     margin-top: 2rem;
+    margin-bottom: 15rem;
+    
 }
 
 #banner button a{
@@ -111,13 +117,7 @@ h1 {
     background-color: rgb(218, 204, 204);
 }
 
-#contato #email a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Montserrat';
-    font-size: 1.8rem;
-    text-align: center;
-}
+
 
 /* ----- SOBRE NÓS ------*/
 
@@ -275,7 +275,7 @@ h4 {
     height: 4rem;
     width: 15rem;
     border-radius: .8rem;
-    background-color: rgb(90, 89, 89);
+    background-color: rgb(190, 182, 182);
     border: none;
     
     margin-top: 1rem;
@@ -323,7 +323,7 @@ h5 {
     height: 4rem;
     max-width: 30rem;
     border-radius: .8rem;
-    background-color: rgb(197, 189, 189);
+    background-color: rgb(174, 168, 168);
     border: none;
     
     padding: 1rem;
@@ -339,7 +339,19 @@ h5 {
 
 .container-contato button:hover {
     cursor: pointer;
-    background-color: rgb(190, 182, 182);
+    background-color: rgb(218, 204, 204);
+}
+
+#contato #email a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 /* ----- FOOTER ---- */
@@ -375,7 +387,7 @@ footer {
     }
 
 
-    /*   banner   */
+    /*  mediaquery banner   */
     #banner {
         display: flex;
         flex-direction: column;
@@ -393,7 +405,7 @@ footer {
         font-size: 2rem;
     }
 
-    /*   sobre nós    */
+    /*   mediaquery sobre nós    */
 
     #sobrenos {
         height: fit-content;
@@ -417,7 +429,7 @@ footer {
     }
 
 
-    /*    soluções   */
+    /*    mediaquery soluções   */
 
     h3 {
         font-size: 3rem;
@@ -444,7 +456,7 @@ footer {
         max-width: 25rem;
     }
 
-    /*     saiba mais    */
+    /*     mediaquery saiba mais    */
    
     h4 {
         font-size: 3rem;
@@ -463,7 +475,7 @@ footer {
         max-width: 35rem;
     }
     
-    /*    contato   */
+    /*   mediaquery contato   */
     h5 {
         font-size: 3rem;
     }
@@ -496,7 +508,12 @@ footer {
         background-color: rgb(180, 179, 179);
     }
 
-    
+    #contato #email a{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        
+    }
 
 
 
