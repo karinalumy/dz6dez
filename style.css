@@ -329,6 +329,18 @@ h5 {
     background-color: rgb(190, 182, 182);
 }
 
+#contato #email a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.4rem;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
 /* ----- FOOTER ---- */
 footer {
     background-color: rgb(236, 224, 224); 
@@ -483,10 +495,11 @@ footer {
         background-color: rgb(180, 179, 179);
     }
 
-    
-
-
-
-
+    #contato #email a{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        
+    }
 
 }
