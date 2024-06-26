@@ -10,49 +10,53 @@
 
 body {
     font-size: 1.6rem;
-    font-family: 'Roboto Slab', sans-serif;
-    background-color: rgb(236, 224, 224)
+    font-family: 'Assistant', sans-serif;
+    background-color: #282461;
+    color: #EBECF0;
 }
 
 main {
     max-width: 100%;
     margin: 0 auto;
-
 }
 
 
 header {
-    background-color: black;
+    background-color: #282461;
     display: flex;
-    
-    padding: 1.5rem;   
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
 
 header img {
-    max-width: 20rem;
-    max-height: 5rem;
+    max-width: 30rem;
+    max-height: 10rem;
 }
 
 .container-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
+   align-items: center;
+   align-content: center;
 }
 
 .container-menu ul {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .container-menu li {
-    font-size: 1.2rem;
-    margin-left: 2rem;
+    font-size: 1.8rem;
+    margin-right: 2rem;
     list-style: none;
 }
 
 .container-menu a {
     text-decoration: none;
-    color: rgb(236, 224, 224);
+    color: #EFEFEF;
 }
 
 .container-menu a:hover {
@@ -63,45 +67,43 @@ header img {
 /* ------MAIN-------*/
 
 #banner {
-    background-image: url('./assets/datascience-background2.png');
+    background-image: url('./assets/banner6.png');
     background-size: cover;
 	background-position: 35%;
-    height: 55rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    
+    height: 45rem;
+    padding-top: 10rem;
+    padding-left: 5rem;
 }
 
 h1 {
-    font-size: 3rem;
-    color: rgb(236, 224, 224);
+    font-family: 'Antonio', sans-serif;
+    font-size: 5rem;
+    color: #FF9973;
 }
 
 #banner p {
-    margin-top: 1rem;
-    color: rgb(236, 224, 224);
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
 }
 
 #banner button {
     height: 4rem;
-    max-width: 20rem;
+    width: 20rem;
     border-radius: .8rem;
-    background-color: rgb(236, 224, 224);
-    
+    background-color: #EBECF0;
+    border: none;
+        
     font-weight: 700;
     margin-top: 2rem;
+    margin-bottom: 15rem;
 }
 
 #banner button a{
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.6rem ;
     font-weight: 700;
-    color: black;
+    color: #282461;
 }
 
 #banner button:hover {
@@ -111,71 +113,85 @@ h1 {
 
 
 /* ----- SOBRE NÓS ------*/
-
 #sobrenos {
-    height: fit-content;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-h2 {
-    font-size: 2rem;  
+
+#sobrenos h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 5rem;  
+    color: #E898AC;
 }
 
 #sobrenos p {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    margin-left: 3rem;
+    max-width: 45rem;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.8rem;
+    color: #EBECF0;
 }
 
 
 /* ----- SOLUÇÕES------*/
 #solucoes {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-align: center;
-
-    background-color:rgb(247, 238, 238);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #EBECF0;
 }
 
 h3 {
-    font-size: 2rem;
-    color:black;
+    font-family: 'Antonio', sans-serif;
+    font-size: 3rem;
+    color:#282461;
+    text-align: center;
 }
 
 .container-solucoes {
-    margin-top: 3rem;
-    list-style: none;
+    margin-top: 3rem; 
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    margin-right: 5rem;
-    margin-left: 5rem;    
+    text-align: center;
+    
+     
 }
 
-.container-solucoes li {
-    font-size: 2rem;
-    font-weight: 700;
+#solucoes .container-solucoes li {
+    list-style: none;
     color: black;
     margin-top: 3rem;
+    max-width: 25rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    
 }
 
 .container-solucoes li p {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color:black;
-    margin-top: 1rem;
+    color:#282461;
+    
     font-size: 1.6rem;
 }
 
+.container-solucoes li p strong{
+    font-weight: 700;
+    color:#282461;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
 .container-solucoes li img {
-    max-height: 20rem;
-    max-width: 20rem;
+    max-height: 13rem;
+    max-width: 13rem;
     margin-top: 1rem;
 }
 
@@ -188,20 +204,20 @@ h3 {
     flex-direction: column;
     text-align: center;
 
-    align-items: center;
-    height: fit-content;
-
 }
 
 h4 {
-    font-size: 2rem;
+    font-family: 'Antonio', sans-serif;
+    font-size: 3rem;
+    color: #EBECF0;
 }
 
 .container-posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 33rem;
+    gap: 3rem;
 
     list-style: none;
 
@@ -213,11 +229,8 @@ h4 {
     margin: 0 auto;
     background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*0CIyZ2b5lvOf8qc44auuoA.jpeg");
     background-position: 0%;
-    box-shadow: .5rem .1rem 1rem #a7a6a6;
     height: 20rem;
     max-width: 30rem;
-   
-    border-radius: 2rem;
     
 }
 
@@ -227,9 +240,6 @@ h4 {
     background-position: 0%;
     height: 20rem;
     max-width: 30rem;
-    box-shadow: .3rem .1rem 1rem #a7a6a6;
-
-    border-radius: 2rem;
 }
 
 .post-image-three{
@@ -238,23 +248,20 @@ h4 {
     background-position: 40% 10%;
     height: 20rem;
     max-width: 30rem;
-    box-shadow: .5rem .1rem 1rem #a7a6a6;
-    
-    border-radius: 2rem;
-
 }
 
 .container-posts p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
     margin-top: 1rem;
+    max-width: 30rem;
 }
 
 .container-posts button a{
     font-size: 1.6rem;
     font-weight: 700;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-family: "Assistant", sans-serif;
     text-decoration: none;
 
 }
@@ -262,11 +269,11 @@ h4 {
 .container-posts button{
     height: 4rem;
     width: 15rem;
-    border-radius: .8rem;
-    background-color: rgb(90, 89, 89);
+    border-radius: .5rem;
+    background-color: #EBECF0;
     border: none;
     
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
 .container-posts button:hover {
@@ -278,72 +285,88 @@ h4 {
 
 
 /* ----- CONTATO ------*/
-h5 {
+#contato h5 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    color: rgb(0, 0, 0);
+    font-family: "Antonio", sans-serif;
+    font-size: 3rem;
+    color: #282461;
 }
 
 #contato {
-    background-color: rgb(247, 238, 238);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    background-color: #EBECF0;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
-.container-contato {
+#contato .container-contato {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 }
 
-.container-contato p{
-    margin-right: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    max-width: 45rem;
-    text-align: center;
+#contato img {
+  height: 25rem;
 }
 
-.container-contato button {
+#contato .container-contato-pbutton{
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 5rem;
+}
+
+#contato p{
+    margin-top: 2rem;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.8rem;
+    max-width: 40rem;
+    color: #282461;
+}
+
+#contato button {
     height: 4rem;
-    max-width: 30rem;
-    border-radius: .8rem;
-    background-color: rgb(197, 189, 189);
-    border: none;
-    
-    padding: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    width: 15rem;
+    align-items: center;
     margin-top: 1rem;
-    margin-bottom: 3rem;
-}
-.container-contato button a{
-    text-decoration: none;
-    color: black;
+    
+    border-radius: .5rem;
+    background-color: #FF9973;
+    border: none;    
 }
 
-.container-contato button:hover {
+#contato button a{
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #EBECF0;
+    align-items: center;
+
+}
+
+#contato button:hover {
     cursor: pointer;
-    background-color: rgb(190, 182, 182);
+    background-color: #cda293;
 }
 
 #contato #email a{
     text-decoration: none;
-    color: black;
-    font-family: 'Montserrat';
+    color: #282461;
+    font-family: 'Assistant', sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 2rem;
     
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    
 }
 
 /* ----- FOOTER ---- */
 footer {
-    background-color: rgb(236, 224, 224); 
+   
     width: 100%;
     padding: 3rem;
     display: flex;
@@ -355,17 +378,22 @@ footer {
 
 
 /* ---- MEDIA QUERIES ---- */
-@media (min-width: 40em) {
+@media (max-width: 48em) {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        padding: 1.5rem 5rem 1.5rem 5rem;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    .container-menu {
+        margin-left: 3rem;
     }
 
     header img {
-        max-width: 40rem;
+        max-width: 25rem;
         max-height: 8rem;
     }
 
@@ -378,75 +406,96 @@ footer {
     #banner {
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        padding-bottom: 5rem;
-        padding-left: 5rem;
+        justify-content: center;
+                
+        max-height: 20rem;
+        padding-left: 2rem;
     }
 
-    h1 {
-        font-size: 5rem;
-        max-width: 40rem;
+    #banner h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
+
     }
     
     #banner p {
-        font-size: 2rem;
+        font-size: 1.4rem;
+    }
+
+    #banner button {
+        max-width: 15rem;
+        padding: .5rem;
+    }
+
+    #banner button a {
+        font-size: 1.2rem;
     }
 
     /*   sobre nós    */
 
     #sobrenos {
-        height: fit-content;
+        
         padding: 5rem 5rem 5rem 5rem;
     
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+       
         text-align: center;
     }
 
-    h2 {
-        font-size: 4rem;  
+    #sobrenos h2 {
+        font-size: 2rem;  
     }
 
     #sobrenos p {
         max-width: 45rem;
-        font-size: 1.8rem;
-        margin-left: 4rem;
+        font-size: 1.4rem;
     }
 
 
     /*    soluções   */
 
-    h3 {
-        font-size: 3rem;
-        color:black;
+    #solucoes {
+        padding-right: 0;
+        padding-left: 0;
+            }
+
+    #solucoes h3 {
+        font-size: 2rem;
     }
     
-    .container-solucoes {
-        margin-top: 3rem;
-        list-style: none;
-    
+    #solucoes .container-solucoes {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;    
+    
+        margin-top: 3rem;
+        list-style: none;
+    
+        gap: 2rem;    
+    }
+
+    #solucoes .container-solucoes li {
+        max-width: 20rem;
+        flex-wrap: wrap;
     }
     
-    .container-solucoes li p {
-        max-width: 25rem;
+    #solucoes .container-solucoes li p {
+        font-size: 1.4rem;
+        max-width: 30rem;
     }
     
     .container-solucoes li img {
-        max-height: 25rem;
-        max-width: 25rem;
+        max-height: 10rem;
+        max-width: 10rem;
     }
 
     /*     saiba mais    */
    
     h4 {
-        font-size: 3rem;
+        font-family: 'Antonio', sans-serif;
+        font-size: 2rem;
     }
     
     .container-posts {
@@ -463,36 +512,54 @@ footer {
     }
     
     /*    contato   */
-    h5 {
-        font-size: 3rem;
+    #contato h5 {
+        font-family: 'Antonio', sans-serif;
+        font-size: 2rem;
     }
     
-    .container-contato {
+    #contato .container-contato {
         display: flex;
-        flex-direction: row;
-           
+        flex-direction: column;  
+        align-items: center;
+        justify-content: center;         
+    }
+
+    #contato .container-contato-pbutton{
+        margin-right: 0;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
     
-    .container-contato p{
+    #contato .container-contato p{
         max-width: 35rem;
-        text-align: right;
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 1.6rem;
     }
     
-    .container-contato button {
-        height: 5rem;
-        width: 25rem;
+    #contato .container-contato button {
+       
+        align-items: center;
+        height: 4rem;
+        width: 15rem;
     
-        background-color: rgb(90, 89, 89);
+        background-color: #FF9973;
     }
 
     .container-contato button a{
         color: white;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     
     .container-contato button:hover {
         background-color: rgb(180, 179, 179);
+    }
+
+    #contato .container-contato-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     #contato #email a{
